@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+hr{
+    border: none; /* ลบขอบเดิม */
+    height: 1px; /* ความสูงของ hr */
+    background-color: #333; /* สีพื้นหลัง */
+}
+
+#navbar{
+    display: flex;
+    justify-content: flex-end; /* จัดเมนูไปทางขวา */
+    padding: 1.5rem;
+    background-color: rgba(14, 14, 14, 0.904);
+    top: 0;
+    position: sticky;
+}
+#navbar a:hover{
+    color:rgb(199, 199, 199)
+}
+nav ul {
+    list-style-type: none; /* ลบจุดหน้ารายการ */
+    margin: 0;
+    padding: 0;
+    display: flex; /* ใช้ Flexbox เพื่อจัดเมนูในแถวเดียว */
+}
+nav ul li {
+    margin-right: 2rem; /* เพิ่มช่องว่างระหว่างเมนู */
+}
+nav ul li a {
+    text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
+    color: rgb(255, 255, 255);
+}
+
+#welcome-section{
+    display: flex;
+    width: 100%;
+    height: 100vh; /* ความสูงของหน้าจอทั้งหมด */
+    justify-content: center;  /* จัดกึ่งกลางแนวนอน */
+    align-items: center;      /* จัดกึ่งกลางแนวตั้ง */
+    flex-direction: column;   /* จัดบรรทัดของข้อความให้แยกกันในแนวตั้ง */
+    text-align: center;       /* จัดกึ่งกลางข้อความในแต่ละบรรทัด */
+    background-image: url(https://pixabay.com/get/g7a6ed83b41d169fb2c952bb40c9042ecd6a12596996767c8137212a8dcc596ba0e79bf0293752c3ac9cf7213752645ad01bba47d93ad79e65055dbf5cd1f3150_1280.png);
+    background-size: cover;
+    background-position: center; /* จัดตำแหน่งรูปภาพให้อยู่ตรงกลาง */
+}
+.info{
+    margin: 0.5rem;
+    color: rgb(236, 0, 0);
+    font-size: 1.5rem;
+}
+#welcome-section h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#projects{
+    background: linear-gradient(to bottom, #000, #222);
+    padding: 3rem;
+}
+#projects h2{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.img-prohects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+.project-tile{
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgba(22, 22, 22, 0.879);
+    font-weight: 500;
+}
+.project-tile:hover{
+    background-color: rgb(100, 100, 100);
+    transition: background-color 0.3s, transform 0.2s;
+}
+.project-image{
+    height: calc(100% - 2.0rem);
+    width: 100%;
+    object-fit: cover;
+}
+.show-all{
+    text-decoration: none; /* ลบขีดเส้นใต้ถ้าต้องการ */
+    color: rgb(255, 255, 255);
+    display: inline-block; /* ทำให้ปุ่มมีขอบเขตคลิก */
+    background-color: rgba(22, 22, 22, 0.879); /* สีพื้นหลัง */
+    padding: 10px 20px; /* ระยะห่างภายใน */
+    border-radius: 5px; /* มุมโค้ง */
+}
+.show-all:hover{
+    background-color: rgb(100, 100, 100);
+    transition: background-color 0.3s, transform 0.2s; /* เอฟเฟกต์การเปลี่ยนสีและการเคลื่อนไหว */
+}
+.container{
+    text-align: center;
+}
+.container h4:hover{
+    transform: translateX(5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact{
+    display: flex;
+    width: 100%;
+    height: 80vh; /* ความสูงของหน้าจอทั้งหมด */
+    justify-content: center;  /* จัดกึ่งกลางแนวนอน */
+    align-items: center;      /* จัดกึ่งกลางแนวตั้ง */
+    flex-direction: column;   /* จัดบรรทัดของข้อความให้แยกกันในแนวตั้ง */
+    text-align: center;       /* จัดกึ่งกลางข้อความในแต่ละบรรทัด */
+    background: linear-gradient(to bottom, #222, #000);
+}
+#h-contact{
+    padding-bottom: 4rem;
+}
+#h-contact h2{
+    color: white;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+#h-contact p{
+    color: rgb(227, 227, 227);
+    font-size: 1.5rem;
+}
+#a-contact a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 3rem;
+}
+#info-contact{
+    padding-left: 0.5rem;
+    font-size: 2rem;
+}
+#profile-link{
+    display: inline-block;
+    font-size: 2rem; /* ปรับขนาดไอคอน */
+    cursor: pointer;
+}
+#profile-link:hover{
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(14, 14, 14, 0.904);
+}
+
+@media (max-width: 1070px) {
+    #profile-link{
+        display: block;
+    }
+}
+@media (max-width: 520px) {
+    nav ul li {
+        margin-right: 1.5rem;
+    }
+}
+@media (max-height: 820px) {
+    #h-contact{
+        padding-bottom: 0;
+    }
+}
+@media (max-height: 720px) {
+    #h-contact h2{
+        font-size: 2.5rem;
+    }
+    #a-contact a{
+        margin: 2rem;
+    }
+}
+@media (max-height: 560px){
+    #a-contact a{
+        margin: 1.5rem;
+    }
+} 
+@media (max-height: 500px){
+    #a-contact a{
+        margin: 1rem;
+    }
+    #info-contact{
+        font-size: 1.5rem;
+    }
+    #h-contact p {
+        font-size: 1.2rem;
+    }
+    #h-contact h2 {
+        font-size: 2rem;
+    }
+}
