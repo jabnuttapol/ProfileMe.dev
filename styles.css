@@ -47,9 +47,7 @@ nav ul li a {
     align-items: center;      /* จัดกึ่งกลางแนวตั้ง */
     flex-direction: column;   /* จัดบรรทัดของข้อความให้แยกกันในแนวตั้ง */
     text-align: center;       /* จัดกึ่งกลางข้อความในแต่ละบรรทัด */
-    background-image: url(https://pixabay.com/get/g7a6ed83b41d169fb2c952bb40c9042ecd6a12596996767c8137212a8dcc596ba0e79bf0293752c3ac9cf7213752645ad01bba47d93ad79e65055dbf5cd1f3150_1280.png);
-    background-size: cover;
-    background-position: center; /* จัดตำแหน่งรูปภาพให้อยู่ตรงกลาง */
+    background: linear-gradient(to bottom, #222, #000);
 }
 .info{
     margin: 0.5rem;
